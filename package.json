@@ -3,6 +3,7 @@
   "module": "src/index.ts",
   "type": "module",
   "scripts": {
+    "dev": "bun run --watch src/index.ts",
     "build:linux": "bun build ./src/desktop.ts --compile --target=bun-linux-x64 --outfile bins/linux.sh",
     "build:windows": "bun build ./src/desktop.ts --compile --target=bun-windows-x64 --outfile bins/windows.exe",
     "build:mac": "bun build ./src/desktop.ts --compile --target=bun-darwin-x64 --outfile bins/mac.app"
@@ -12,6 +13,11 @@
     "typescript": "^5.0.0"
   },
   "prettier": {
-    "printWidth": 100
+    "printWidth": 120
+  },
+  "dependencies": {
+    "@graphql-typed-document-node/core": "^3.2.0",
+    "graphql": "^16.9.0",
+    "graphql-request": "^7.1.0"
   }
 }

@@ -177,3 +177,4 @@ dist
 # Binaries and Build
 bins
 build/
+crunch.http.config.json
