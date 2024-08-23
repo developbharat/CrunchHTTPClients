@@ -1,0 +1,17 @@
+{
+  "name": "crunchhttpclients",
+  "module": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "build:linux": "bun build ./src/desktop.ts --compile --target=bun-linux-x64 --outfile bins/linux.sh",
+    "build:windows": "bun build ./src/desktop.ts --compile --target=bun-windows-x64 --outfile bins/windows.exe",
+    "build:mac": "bun build ./src/desktop.ts --compile --target=bun-darwin-x64 --outfile bins/mac.app"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5.0.0"
+  },
+  "prettier": {
+    "printWidth": 100
+  }
+}
